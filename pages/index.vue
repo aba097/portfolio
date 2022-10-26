@@ -1,4 +1,5 @@
 <template>
+<!--
   <v-row justify="center" align="center">
     <v-col cols="12" sm="8" md="6">
       <v-card class="logo py-4 d-flex justify-center">
@@ -78,10 +79,22 @@
       </v-card>
     </v-col>
   </v-row>
+-->
+  <v-app>
+    <v-container>
+      <h1>aba097 portfolio</h1>
+      <h1>Profile </h1>
+      <h1>Works</h1>
+    </v-container>
+  </v-app>
+
 </template>
 
 <script>
 export default {
-  name: 'IndexPage',
+  data(){
+    return {
+    }
+  }
 }
 </script>
