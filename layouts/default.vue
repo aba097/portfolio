@@ -1,5 +1,7 @@
 <template>
-  <Nuxt />
+  <v-app>
+      <Nuxt />
+  </v-app>
   <!--
   <v-app dark>
     <v-navigation-drawer
