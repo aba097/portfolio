@@ -83,42 +83,44 @@
 
   <v-main>
     <v-container>
-      <v-row justify="center">
-        <h1>aba097 portfolio</h1>
+      <v-row justify="center" class="pa-10">
+        <h1  class="text-h1 font-weight-black">aba097 portfolio</h1>
       </v-row>
     </v-container>
+
+    <div style="background-color:#79c6b6;">
+      <v-container>
+        <v-row justify="center" class="px-10 pt-10 pb-5">
+          <h2 class="text-h2 font-weight-black">Profile </h2>
+        </v-row>
+        <v-row justify="center">
+          <v-col cols="2">
+            <img src="~/assets/images/koara.png" width="150" height="150">
+          </v-col>
+          <v-col cols="6">
+            <p>静岡大学総合科学研究科情報学専攻1年の大学院生。高校は浜松工業高校の情報技術科・情報処理部に所属し、
+              授業では、ハードウェア・ソフトウェア・ネットワーク・データベース・アルゴリズムなど幅広く学び、
+              部活動では、主に競技プログラミングをしていた。その後、静岡大学情報学部情報科学科に進学し、同じく情報分野について学ぶ。
+              大学では、主にアプリケーションの開発をしており、英単語帳やTODO、研究関連などのアプリケーションを開発している。
+            </p>
+          <v-breadcrumbs class="pa-0" :items="linkItems">
+              <template v-slot:item="{ item }">
+                <v-breadcrumbs-item 
+                  :href="item.href"
+                  :disabled="item.disabled"
+                >
+                  <span class="font-weight-black"><v-icon large> {{ item.icon }} </v-icon> {{ item.text }} </span>
+                </v-breadcrumbs-item>
+              </template>
+            </v-breadcrumbs>
+          </v-col>
+        </v-row>
+      </v-container>
+    </div>
+
     <v-container>
-      <v-row justify="center">
-        <h2>Profile </h2>
-      </v-row>
-      <!-- <v-row justify="center">
-        <v-col>
-          <img src="~/assets/images/koara.png" width="150" height="150">
-        </v-col>
-        <v-col>
-          <p>静岡大学総合科学研究科情報学専攻1年の大学院生。高校は浜松工業高校の情報技術科・情報処理部に所属し、
-            授業では、ハードウェア・ソフトウェア・ネットワーク・データベース・アルゴリズムなど幅広く学び、
-            部活動では、主に競技プログラミングをしていた。その後、静岡大学情報学部情報科学科に進学し、同じく情報分野について学ぶ。
-            大学では、主にアプリケーションの開発をしており、英単語帳やTODO、研究関連などのアプリケーションを開発している。
-          </p>
-         <v-breadcrumbs class="pa-0" :items="linkItems">
-            <template v-slot:item="{ item }">
-              <v-breadcrumbs-item 
-                :href="item.href"
-                :disabled="item.disabled"
-              >
-                <span><v-icon large> {{ item.icon }} </v-icon> {{ item.text }} </span>
-              </v-breadcrumbs-item>
-            </template>
-          </v-breadcrumbs>
-          
-          
-        </v-col>
-      </v-row> -->
-    </v-container>
-    <v-container>
-      <v-row justify="center">
-        <h2>Works</h2>
+      <v-row justify="center" class="pa-10">
+        <h2 class="text-h2 font-weight-black">Works</h2>
       </v-row>
     </v-container>
 </v-main>
